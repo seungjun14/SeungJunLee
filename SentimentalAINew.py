@@ -46,6 +46,7 @@ def getSituationFeedback():
             sentences = sentiment.get('sentences')
         except Exception as e:
             print ('API Error : ', str(e))
+            break
 
         # Note7. 배열을 사용하는게 자연스러워보입니다.
         negativeSentences = []
